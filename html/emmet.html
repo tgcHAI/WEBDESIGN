@@ -3,58 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Expense Tracker - Dashboard</title>
-  <link rel="stylesheet" href="WEBDESIGN/css/style.css">
+  <title>WISE MMDC Expense Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header class="navbar">
-    <nav class="navbar__menu">
-      <a href="index.html" class="navbar__link navbar__link--active">Dashboard</a>
-      <a href="calculator.html" class="navbar__link">Calculator</a>
-      <a href="bonus.html" class="navbar__link">Bonus</a>
+  <header class="header">
+    <div class="header__logo">
+      <img src="img/logo.png" alt="Logo" class="header__logo-img">
+      <h1 class="header__title">WISE MMDC Expense Tracker</h1>
+    </div>
+    <nav class="header__nav">
+      <a href="#" class="header__nav-link">Home</a>
+      <a href="#" class="header__nav-link">Calculator</a>
+      <a href="#" class="header__nav-link">About</a>
     </nav>
   </header>
 
-  
-  <main class="dashboard">
-
-    <section class="dashboard__section income">
-      <h2 class="dashboard__title">Monthly Income</h2>
-      <div class="income__form">
-        <label for="allowance" class="income__label">Allowance</label>
-        <input type="number" id="allowance" class="income__input">
-
-        <label for="parttime" class="income__label">Part-time Job</label>
-        <input type="number" id="parttime" class="income__input">
-      </div>
-      <p class="income__total">Total Income: ₱0.00</p>
-    </section>
-    <section class="dashboard__section expenses">
-      <h2 class="dashboard__title">Monthly Expenses</h2>
-      <div class="expenses__form">
-        <label for="food" class="expenses__label">Food</label>
-        <input type="number" id="food" class="expenses__input">
-
-        <label for="transport" class="expenses__label">Transport</label>
-        <input type="number" id="transport" class="expenses__input">
-
-        <label for="internet" class="expenses__label">Internet</label>
-        <input type="number" id="internet" class="expenses__input">
-      </div>
-      <p class="expenses__total">Total Expenses: ₱0.00</p>
+  <main class="main">
+    <section class="mode">
+      <button class="mode__btn mode__btn--traditional">Traditional Student</button>
+      <button class="mode__btn mode__btn--online">Online Student</button>
     </section>
 
-    <section class="dashboard__section summary">
-      <h2 class="dashboard__title">Summary</h2>
-      <div class="summary__box">
-        <p class="summary__item">Remaining Balance: ₱0.00</p>
+    <section class="income card">
+      <h2 class="income__title">Monthly Income</h2>
+      <div class="income__fields">
+        <label class="income__field">
+          Allowance
+          <input type="number" placeholder="₱ 0.00">
+        </label>
+        <label class="income__field">
+          Part-time Job
+          <input type="number" placeholder="₱ 0.00">
+        </label>
+      </div>
+    </section>
+
+    <section class="expenses card">
+      <h2 class="expenses__title">Traditional Student Expenses</h2>
+      <div class="expenses__fields">
+        <label class="expenses__field">Transportation (Daily)
+          <input type="number" placeholder="₱ 0.00">
+        </label><br>
+        <label class="expenses__field">Daily Meals (Baon)
+          <input type="number" placeholder="₱ 0.00">
+        </label><br>
+        <label class="expenses__field">School Supplies
+          <input type="number" placeholder="₱ 0.00">
+        </label><br>
+        <label class="expenses__field">Hangouts/Social
+          <input type="number" placeholder="₱ 0.00">
+        </label><br>
+        <label class="expenses__field">Internet (Wi-Fi/Load)
+          <input type="number" placeholder="₱ 0.00">
+        </label><br>
+      </div>
+    </section>
+
+    <section class="comparison card">
+      <h2 class="comparison__title">Monthly Comparison Summary</h2>
+      <div class="comparison__grid">
+        <div class="comparison__box">
+          <h3>Traditional Student</h3>
+          <p>Monthly Expenses: ₱ 0.00</p>
+        </div>
+        <div class="comparison__box">
+          <h3>Online Student</h3>
+          <p>Monthly Expenses: ₱ 0.00</p>
+        </div>
+        <div class="comparison__box comparison__box--highlight">
+          <h3>Savings (Online)</h3>
+          <p>₱ 0.00</p>
+        </div>
       </div>
     </section>
   </main>
-
-  <footer class="footer">
-    <p class="footer__text">© 2025 Expense Tracker Project</p>
-  </footer>
 </body>
 </html>
