@@ -12,3 +12,6 @@ This is a project for the course **MO-IT120/IT161: Web Systems and Technology** 
 - Jhaersn
 - Jubiler 
 - Reinard 
+
+
+live: https://wisemmdc-8237e9.gitlab.io/
