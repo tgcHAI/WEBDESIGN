@@ -1,4 +1,4 @@
-# Wise MMDC - Student Expense Comparison
+# Wise MMDC - Student Expense Comparison [FOR MILESTONE 1] 
 
 ## Project Description
 
